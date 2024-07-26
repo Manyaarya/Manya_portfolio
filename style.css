@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
@@ -7,8 +6,7 @@
 }
 
 body{
-      font-family: "poppins", sans-serif;
-
+    font-family: "Poppins", sans-serif;
 }
 
 html{
@@ -49,7 +47,6 @@ a {
     text-decoration: none;
     text-decoration-color: white;
 }
-
 
 a:hover{
     color: grey;
@@ -173,18 +170,6 @@ a:hover{
 
 /* SECTIONS */
 
-section{
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-}
-
-.section-container {
-    display: flex;
-}
-
 #profile{
     display: flex;
     justify-content: center;
@@ -206,13 +191,12 @@ section{
 
 .section__text p{
     font-weight:600;
-
 }
 
 .section__text__p1{
     text-align: center;
-
 }
+
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -285,7 +269,7 @@ section{
  }
 
  .btn-color-2:hover{
-    border: rgb(255,255,255)0.1rem solid;
+    border: rgb(255,255,255) 0.1rem solid;
  }
 
 .btn-container{
@@ -296,35 +280,35 @@ section{
 
 #about {
     position: relative;
-  }
+}
   
-  .about-containers {
+.about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-  }
+}
   
-  .about-details-container {
+.about-details-container {
     justify-content: center;
     flex-direction: column;
-  }
+}
   
-  .about-containers,
-  .about-details-container {
+.about-containers,
+.about-details-container {
     display: flex;
-  }
+}
   
-  .about-pic {
+.about-pic {
     border-radius: 2rem;
-  }
+}
   
-  .arrow {
+.arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
-  }
+}
   
-  .details-container {
+.details-container {
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -332,95 +316,95 @@ section{
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-  }
+}
   
-  .section-container {
+.section-container {
     gap: 4rem;
     height: 80%;
-  }
+}
   
-  .section__pic-container {
+.section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
-  }
+}
   
-  /* EXPERIENCE SECTION */
+/* EXPERIENCE SECTION */
   
-  #experience {
+#experience {
     position: relative;
-  }
+}
   
-  .experience-sub-title {
+.experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
-  }
+}
   
-  .experience-details-container {
+.experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
+}
   
-  .article-container {
+.article-container {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
-  }
+}
   
-  article {
+article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
-  }
+}
   
-  article .icon {
+article .icon {
     cursor: default;
-  }
+}
   
-  /* PROJECTS SECTION */
+/* PROJECTS SECTION */
   
-  #projects {
+#projects {
     position: relative;
-  }
+}
   
-  .color-container {
+.color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
-  }
+}
   
-  .project-img {
+.project-img {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
-  }
+}
   
-  .project-title {
+.project-title {
     margin: 1rem;
     color: black;
-  }
+}
   
-  .project-btn {
+.project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
-  }
-  
-  /* CONTACT */
+}
 
-  #contact {
+/* CONTACT */
+
+#contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-  }
+}
 
-  .contact-info-upper-container {
+.contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -429,60 +413,117 @@ section{
     background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
-  }
+}
   
-  .contact-info-container {
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
-  }
+}
   
-  .contact-info-container p {
+.contact-info-container p {
     font-size: larger;
-  }
+}
   
-  .contact-icon {
+.contact-icon {
     cursor: default;
-  }
+}
   
-  .email-icon {
+.email-icon {
     height: 2.5rem;
-  }
+}
 
-  /* FOOTER SECTION */
+/* FOOTER SECTION */
 
-  footer {
+footer {
     height: 26vh;
     margin: 0 1rem;
-  }
+}
 
-  footer p {
+footer p {
     text-align: center;
-  }
+}
 
+/* NEW SECTIONS STYLES */
 
+/* Skills Section */
+#skills {
+    padding: 2rem 0;
+}
 
+#skills .section__text__p1,
+#skills .title {
+    text-align: center;
+}
 
+.skill-item {
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
 
+/* Leadership Experience Section */
+#leadership-experience {
+    padding: 2rem 0;
+}
 
+#leadership-experience .section__text__p1,
+#leadership-experience .title {
+    text-align: center;
+}
 
+.leadership-item {
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
 
+/* Volunteering Section */
+#volunteering {
+    padding: 2rem 0;
+}
 
+#volunteering .section__text__p1,
+#volunteering .title {
+    text-align: center;
+}
 
+.volunteering-item {
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
 
+/* Achievements Section */
+#achievements {
+    padding: 2rem 0;
+}
 
+#achievements .section__text__p1,
+#achievements .title {
+    text-align: center;
+}
 
+.achievement-item {
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
 
+/* Education Section */
+#education {
+    padding: 2rem 0;
+}
 
+#education .section__text__p1,
+#education .title {
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
+.education-item {
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
