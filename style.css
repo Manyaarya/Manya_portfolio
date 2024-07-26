@@ -412,14 +412,14 @@ section{
   }
   
   /* CONTACT */
-  
+
   #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
   }
-  
+
   .contact-info-upper-container {
     display: flex;
     justify-content: center;
