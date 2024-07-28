@@ -167,55 +167,62 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  gap: 8rem;
+  height: 77vh;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.title{
+  font-size: 2.5rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .section__pic-container {
   display: flex;
   height: 400px;
-  width: 400px;
+  width: 405px;
   margin: auto 0;
-  border: 2px solid red;
 }
 
 .section__text {
   align-self: center;
   text-align: center;
-  border: 2px solid blue;
+  padding: 30px 30px 30px 30px;
+  
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #bcbfc2;
+  color: rgb(33, 52, 84);
+  letter-spacing: -0.05em;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 
 .section__text__p1 {
-  text-align: center;
+  text-align: center; 
+
 }
 
-#typing-animation {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: rgb(0, 0, 0);
-}
+#profession{
+  font-size: 2.5rem;
+  text-shadow: none;
+  font-family: 'Pacifico', cursive;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  background-image: linear-gradient(90deg, rgb(74, 89, 176) 0%, rgb(60, 21, 104) 56%, rgb(17, 21, 79) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: move 1s infinite;
 
-#typing-animation::before {
-  content: "";
-  position: absolute;
-  height: auto;
-  width: auto;
-  border-left: 2px solid green;
-  color: rgb(179, 101, 101);
-  animation: animate 4s steps(12) infinite;
-  -webkit-animation: animate 4s steps(12) infinite;
 }
-
-@keyframes animate {
-  40%, 60%{
-    left: 100%;
-  }
-  100%{
-    left: 0%
+@keyframes move {
+  50% {
+    background-image: linear-gradient(262deg, rgb(45, 22, 101) 0%, rgb(56, 26, 93) 56%, rgb(80, 20, 129) 100%);
   }
 }
 
