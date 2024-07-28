@@ -15,15 +15,15 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
-  color: rgb(85, 85, 85);
-}
-
 /* TRANSITION */
 
 a,
 .btn {
   transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
@@ -59,6 +59,7 @@ a:hover {
 }
 
 .logo {
+  font-family: cursive;
   font-size: 2rem;
 }
 
@@ -158,6 +159,7 @@ section {
 
 .section-container {
   display: flex;
+  border: 2px solid black;
 }
 
 /* PROFILE SECTION */
@@ -174,11 +176,13 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  border: 2px solid red;
 }
 
 .section__text {
   align-self: center;
   text-align: center;
+  border: 2px solid blue;
 }
 
 .section__text p {
@@ -189,9 +193,30 @@ section {
   text-align: center;
 }
 
-.section__text__p2 {
+#typing-animation {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+#typing-animation::before {
+  content: "";
+  position: absolute;
+  height: auto;
+  width: auto;
+  border-left: 2px solid green;
+  color: rgb(179, 101, 101);
+  animation: animate 4s steps(12) infinite;
+  -webkit-animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%, 60%{
+    left: 100%;
+  }
+  100%{
+    left: 0%
+  }
 }
 
 .title {
